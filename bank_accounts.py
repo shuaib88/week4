@@ -24,6 +24,7 @@ if my_checking_account.balance != 1000.00:
     print("This bank can't be trusted! Failed on step 1.")
     exit()
 
+
 # 2. Transfer between two accounts
 my_savings_account.balance = 1000.00
 my_savings_account.transfer(500.00, my_checking_account)
@@ -31,6 +32,7 @@ my_savings_account.transfer(500.00, my_checking_account)
 if my_checking_account.balance != 1500.00:
     print("This bank can't be trusted! Failed at step 2.")
     exit()
+
 
 # 3. Guard against overdrafts
 my_checking_account.withdraw(10000.00)
